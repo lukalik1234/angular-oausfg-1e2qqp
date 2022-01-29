@@ -74,10 +74,14 @@ tr.example-element-row:not(.example-expanded-row):active {
   color: red;
 }
 
-.mat-icon-completed{
-  color:green;
+.mat-icon-completed {
+  color: green;
 }
 
-.mat-icon-failed{
-  color:red;
+.mat-icon-failed {
+  color: red;
+}
+
+.customer {
+  text-decoration: underline;
 }

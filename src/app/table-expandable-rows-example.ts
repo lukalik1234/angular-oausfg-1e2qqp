@@ -32,7 +32,7 @@ import { MatPaginator } from '@angular/material/paginator';
 })
 export class TableExpandableRowsExample implements AfterViewInit {
   dataSource = new MatTableDataSource(ELEMENT_DATA);
-  columnsToDisplay = ['msisdn', 'ba', 'opcija', 'datum', 'status'];
+  columnsToDisplay = ['msisdn', 'opcija', 'datum', 'status'];
   expandedElement: PeriodicElement | null;
 
   constructor(private _liveAnnouncer: LiveAnnouncer) {}

@@ -73,3 +73,11 @@ tr.example-element-row:not(.example-expanded-row):active {
   font-weight: bold;
   color: red;
 }
+
+.mat-icon-completed{
+  color:green;
+}
+
+.mat-icon-failed{
+  color:red;
+}

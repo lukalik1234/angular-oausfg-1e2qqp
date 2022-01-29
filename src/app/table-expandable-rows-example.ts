@@ -32,7 +32,7 @@ import { MatPaginator } from '@angular/material/paginator';
 })
 export class TableExpandableRowsExample implements AfterViewInit {
   dataSource = new MatTableDataSource(ELEMENT_DATA);
-  columnsToDisplay = ['MSISDN', 'BA', 'Opcija', 'Datum', 'Status'];
+  columnsToDisplay = ['msisdn', 'ba', 'opcija', 'datum', 'status'];
   expandedElement: PeriodicElement | null;
 
   constructor(private _liveAnnouncer: LiveAnnouncer) {}
@@ -65,127 +65,127 @@ export class TableExpandableRowsExample implements AfterViewInit {
 }
 
 export interface PeriodicElement {
-  MSISDN: string;
-  OIB: number;
+  msisdn: string;
+  oib: number;
   paket: string;
-  Status: string;
+  status: string;
   customer: string;
-  Datum: string;
+  datum: string;
   error: string;
-  Opcija: string;
-  BA: number;
+  opcija: string;
+  billingAccount: number;
 }
 
 const ELEMENT_DATA: PeriodicElement[] = [
   {
-    Status: 'COMPLETED',
-    MSISDN: '3859912345678',
-    OIB: 18487863527,
-    Opcija: 'Opcija 1 GB + naplatni paket 16 kn',
+    status: 'COMPLETED',
+    msisdn: '3859912345678',
+    oib: 18487863527,
+    opcija: 'Opcija 1 GB + naplatni paket 16 kn',
     paket: 'PPR1',
     customer: `Ante Nejasmic`,
-    Datum: '01.01.2022',
+    datum: '01.01.2022',
     error: '',
-    BA: 1238712378,
+    billingAccount: 1238712378,
   },
   {
-    Status: 'COMPLETED',
-    MSISDN: '3859912345679',
-    OIB: 93937472664,
-    Opcija: 'Opcija 10 GB + naplatni paket 45 kn',
+    status: 'COMPLETED',
+    msisdn: '3859912345679',
+    oib: 93937472664,
+    opcija: 'Opcija 10 GB + naplatni paket 45 kn',
     paket: 'PPR10',
     customer: 'Marko Petrakovic',
-    Datum: '01.12.2021',
+    datum: '01.12.2021',
     error: '',
-    BA: 12983127983,
+    billingAccount: 12983127983,
   },
   {
-    Status: 'FAILED',
-    MSISDN: '3859912345613',
-    OIB: 16652846009,
-    Opcija: 'Opcija Unlimited + naplatni paket 99,36 kn',
+    status: 'FAILED',
+    msisdn: '3859912345613',
+    oib: 16652846009,
+    opcija: 'Opcija Unlimited + naplatni paket 99,36 kn',
     paket: 'UNLIMITED',
     customer: `Petar Hektorović`,
-    Datum: '01.11.2021',
+    datum: '01.11.2021',
     error: 'BA account nije aktivan!',
-    BA: 8945387345,
+    billingAccount: 8945387345,
   },
   {
-    Status: 'COMPLETED',
-    MSISDN: '3859912345619',
-    OIB: 84153801177,
-    Opcija: 'Opcija Surfam + naplatni paket 15,99 kn',
+    status: 'COMPLETED',
+    msisdn: '3859912345619',
+    oib: 84153801177,
+    opcija: 'Opcija Surfam + naplatni paket 15,99 kn',
     paket: 'SURF',
     customer: `Juraj Dobrilo`,
-    Datum: '01.10.2021',
+    datum: '01.10.2021',
     error: '',
-    BA: 5765674334,
+    billingAccount: 5765674334,
   },
   {
-    Status: 'COMPLETED',
-    MSISDN: '3859912345337',
-    OIB: 98510132352,
-    Opcija: 'Opcija 100 GB + naplatni paket 9,99 kn',
+    status: 'COMPLETED',
+    msisdn: '3859912345337',
+    oib: 98510132352,
+    opcija: 'Opcija 100 GB + naplatni paket 9,99 kn',
     paket: 'PPR100',
     customer: `Igor Vlahek`,
-    Datum: '01.09.2021',
+    datum: '01.09.2021',
     error: '',
-    BA: 436765445221,
+    billingAccount: 436765445221,
   },
   {
-    Status: 'FAILED',
-    MSISDN: '3859912347856',
-    OIB: 29001321666,
-    Opcija: 'Opcija Vikend Surf + naplatni paket 100 kn',
+    status: 'FAILED',
+    msisdn: '3859912347856',
+    oib: 29001321666,
+    opcija: 'Opcija Vikend Surf + naplatni paket 100 kn',
     paket: 'VIKEND',
     customer: `Petar Preradović`,
-    Datum: '01.08.2021',
+    datum: '01.08.2021',
     error: 'Ne postojeći MSISDN.',
-    BA: 12377347433,
+    billingAccount: 12377347433,
   },
   {
-    Status: 'COMPLETED',
-    MSISDN: '3859912343726',
-    OIB: 62929386226,
-    Opcija: 'Opcija Stara + naplatni paket 1 kn',
+    status: 'COMPLETED',
+    msisdn: '3859912343726',
+    oib: 62929386226,
+    opcija: 'Opcija Stara + naplatni paket 1 kn',
     paket: 'STARA',
     customer: `Ivica Marica`,
-    Datum: '01.07.2021',
+    datum: '01.07.2021',
     error: '',
-    BA: 58454834538,
+    billingAccount: 58454834538,
   },
   {
-    Status: 'COMPLETED',
-    MSISDN: '3859912345638',
-    OIB: 90646527917,
-    Opcija: 'Opcija Mala + naplatni paket 0 kn',
+    status: 'COMPLETED',
+    msisdn: '3859912345638',
+    oib: 90646527917,
+    opcija: 'Opcija Mala + naplatni paket 0 kn',
     paket: 'MALA',
     customer: `Ivana Mesar`,
-    Datum: '01.06.2021',
+    datum: '01.06.2021',
     error: '',
-    BA: 12378321678,
+    billingAccount: 12378321678,
   },
   {
-    Status: 'COMPLETED',
-    MSISDN: '3859912345676',
-    OIB: 64211795970,
-    Opcija: 'Opcija Oliver + naplatni paket 9,99 kn',
+    status: 'COMPLETED',
+    msisdn: '3859912345676',
+    oib: 64211795970,
+    opcija: 'Opcija Oliver + naplatni paket 9,99 kn',
     paket: 'OLIVER',
     customer: `Krešimir Kanibal`,
-    Datum: '01.05.2021',
+    datum: '01.05.2021',
     error: '',
-    BA: 8956875632,
+    billingAccount: 8956875632,
   },
   {
-    Status: 'FAILED',
-    MSISDN: '3859912345765',
-    OIB: 64211795950,
-    Opcija: 'Opcija Silver + naplatni paket 195 kn',
+    status: 'FAILED',
+    msisdn: '3859912345765',
+    oib: 64211795950,
+    opcija: 'Opcija Silver + naplatni paket 195 kn',
     paket: 'SILVER',
     customer: `Marko Govance`,
-    Datum: '01.04.2021',
+    datum: '01.04.2021',
     error: 'Naplatni zahtjev u grešci!',
-    BA: 348577435832,
+    billingAccount: 348577435832,
   },
 ];
 

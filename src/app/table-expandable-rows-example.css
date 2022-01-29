@@ -1,0 +1,75 @@
+table {
+  width: 100%;
+}
+
+tr.example-detail-row {
+  height: 0;
+}
+
+tr.example-element-row:not(.example-expanded-row):hover {
+  background: whitesmoke;
+}
+
+tr.example-element-row:not(.example-expanded-row):active {
+  background: #efefef;
+}
+
+.example-element-row td {
+  border-bottom-width: 0;
+}
+
+.example-element-detail {
+  overflow: hidden;
+  display: flex;
+}
+
+.example-element-diagram {
+  min-width: 80px;
+  border: 2px solid black;
+  padding: 8px;
+  font-weight: lighter;
+  margin: 8px 0;
+
+  height: 104px;
+}
+
+.example-element-symbol {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: normal;
+}
+
+.example-element-description-attribution {
+  opacity: 0.5;
+}
+
+.table-expanded-details {
+  width: 100%;
+  padding-bottom: 1%;
+}
+.expanded-row-content-table {
+  font-size: 13px;
+  padding: 3px;
+  padding-bottom: 1%;
+}
+.example-container {
+  height: 400px;
+  overflow: auto;
+}
+.mat-paginator-sticky {
+  bottom: 0px;
+  position: sticky;
+  z-index: 10;
+}
+
+.expanded-row-content-div {
+  font-size: 13px;
+  align-items: center;
+  display: flex;
+  padding-left: 10%;
+}
+
+.error-pararaph {
+  font-weight: bold;
+  color: red;
+}

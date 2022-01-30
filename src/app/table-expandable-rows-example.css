@@ -104,6 +104,7 @@ tr.example-element-row:not(.example-expanded-row):active {
 
 .filter {
   width: fit-content;
+  margin-left: 5%;
 }
 
 .search {
@@ -111,6 +112,5 @@ tr.example-element-row:not(.example-expanded-row):active {
 }
 
 .actions {
-  float: left;
-  clear: none;
+  display: flex;
 }

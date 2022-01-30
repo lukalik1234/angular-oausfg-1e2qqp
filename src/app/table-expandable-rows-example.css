@@ -104,7 +104,7 @@ tr.example-element-row:not(.example-expanded-row):active {
 
 .filter {
   width: fit-content;
-  margin-left: 5%;
+  margin-left: 3%;
 }
 
 .search {
@@ -116,7 +116,7 @@ tr.example-element-row:not(.example-expanded-row):active {
 }
 
 .excel {
-  margin-left: 5%;
+  margin-left: 3%;
   align-self: center;
   cursor: pointer;
 }

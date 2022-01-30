@@ -1,16 +1,23 @@
-<mat-form-field appearance="standard">
-  <mat-label>Pretraži</mat-label>
-  <input matInput (keyup)="" placeholder="385XXX" #input />
-</mat-form-field>
-<mat-form-field appearance="standard">
-  <mat-label>Filtriraj</mat-label>
-  <input
-    matInput
-    (keyup)="applyFilter($event)"
-    placeholder="Opcija ..."
-    #input
-  />
-</mat-form-field>
+<div class="actions">
+  <div class="search">
+    <mat-form-field appearance="standard">
+      <mat-label>Pretraži</mat-label>
+      <input matInput placeholder="385XXX" #input />
+    </mat-form-field>
+  </div>
+
+  <div class="filter">
+    <mat-form-field appearance="standard">
+      <mat-label>Filtriraj</mat-label>
+      <input
+        matInput
+        (keyup)="applyFilter($event)"
+        placeholder="Opcija ..."
+        #input
+      />
+    </mat-form-field>
+  </div>
+</div>
 
 <div class="example-container mat-elevation-z8">
   <table

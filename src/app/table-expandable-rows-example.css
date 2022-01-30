@@ -101,3 +101,16 @@ tr.example-element-row:not(.example-expanded-row):active {
   /*change color of underline when focused*/
   background-color: black !important;
 }
+
+.filter {
+  width: fit-content;
+}
+
+.search {
+  width: fit-content;
+}
+
+.actions {
+  float: left;
+  clear: none;
+}

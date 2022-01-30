@@ -114,3 +114,13 @@ tr.example-element-row:not(.example-expanded-row):active {
 .actions {
   display: flex;
 }
+
+.excel {
+  margin-left: 5%;
+  align-self: center;
+  cursor: pointer;
+}
+
+.mat-tooltip.tooltip {
+  font-size: 8px !important;
+}

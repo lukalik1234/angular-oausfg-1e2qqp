@@ -8,6 +8,7 @@ tr.example-detail-row {
 
 tr.example-element-row:not(.example-expanded-row):hover {
   background: whitesmoke;
+  cursor: pointer;
 }
 
 tr.example-element-row:not(.example-expanded-row):active {
@@ -89,12 +90,12 @@ tr.example-element-row:not(.example-expanded-row):active {
 
 ::ng-deep .mat-focused .mat-form-field-label {
   /*change color of label*/
-  color: green !important;
+  color: black !important;
  }
 
  ::ng-deep.mat-form-field-underline {
   /*change color of underline*/
-  background-color: green !important;
+  background-color: black !important;
 } 
 
 ::ng-deep.mat-form-field-ripple {

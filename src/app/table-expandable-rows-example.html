@@ -2,7 +2,7 @@
   <div class="search">
     <mat-form-field appearance="standard">
       <mat-label>Pretraži</mat-label>
-      <input matInput placeholder="385XXX" #input />
+      <input matInput placeholder="385XXX" #input1 />
     </mat-form-field>
   </div>
 
@@ -13,15 +13,13 @@
         matInput
         (keyup)="applyFilter($event)"
         placeholder="Opcija ..."
-        #input
+        #input2
       />
     </mat-form-field>
   </div>
 
   <div class="excel">
-    <mat-icon mat-raised-button matTooltip="Preuzmi kao Excel"
-      >file_copy</mat-icon
-    >
+    <mat-icon mat-raised-button matTooltip="Izvezi u Excel">file_copy</mat-icon>
   </div>
 </div>
 
@@ -124,7 +122,7 @@
     <!-- Row shown when there is no matching data. -->
     <tr class="mat-row" *matNoDataRow>
       <td class="mat-cell" colspan="4">
-        Nema rezultata za traženi filter: "{{input.value}}"
+        Nema rezultata za traženi filter: "{{input2.value}}"
       </td>
     </tr>
   </table>

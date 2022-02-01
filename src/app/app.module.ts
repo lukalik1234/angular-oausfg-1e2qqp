@@ -3,13 +3,13 @@ import {BrowserModule} from '@angular/platform-browser';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 import {MaterialExampleModule} from '../material.module';
-import {TableExpandableRowsExample} from './table-expandable-rows-example';
+import {RecurringOptionsExpandable} from './recurring-options-expandable';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {MatNativeDateModule} from '@angular/material/core';
 import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
-  declarations: [TableExpandableRowsExample],
+  declarations: [RecurringOptionsExpandable],
   imports: [
     BrowserAnimationsModule,
     BrowserModule,
@@ -20,6 +20,6 @@ import {HttpClientModule} from '@angular/common/http';
     ReactiveFormsModule,
   ],
   providers: [],
-  bootstrap: [TableExpandableRowsExample],
+  bootstrap: [RecurringOptionsExpandable],
 })
 export class AppModule {}

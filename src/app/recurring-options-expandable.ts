@@ -11,6 +11,7 @@ import { AfterViewInit, ViewChild } from '@angular/core';
 import { MatSort, Sort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
 import { MatPaginator } from '@angular/material/paginator';
+import { CustomerDataModel } from '../models/customer-data-model';
 
 /**
  * @title Table with expandable rows
@@ -34,6 +35,7 @@ export class RecurringOptionsExpandable implements AfterViewInit {
   dataSource = new MatTableDataSource(ELEMENT_DATA);
   columnsToDisplay = ['msisdn', 'opcija', 'datum', 'status'];
   expandedElement: PeriodicElement | null;
+  customer: CustomerDataModel;
 
   constructor(private _liveAnnouncer: LiveAnnouncer) {}
 
@@ -43,6 +45,11 @@ export class RecurringOptionsExpandable implements AfterViewInit {
   ngAfterViewInit() {
     this.dataSource.paginator = this.paginator;
     this.dataSource.sort = this.sort;
+
+    this.customer.firstName = 'Luka';
+    this.customer.lastName = 'Čagalj';
+    this.customer.oib = '123';
+    this.customer.billingAccount = '456';
   }
 
   /** Announce the change in sort state for assistive technology. */

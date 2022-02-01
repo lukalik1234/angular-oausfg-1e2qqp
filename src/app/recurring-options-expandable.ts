@@ -48,8 +48,8 @@ export class RecurringOptionsExpandable implements AfterViewInit {
 
     this.customer.firstName = 'Luka';
     this.customer.lastName = 'Čagalj';
-    this.customer.oib = '123';
-    this.customer.billingAccount = '456';
+    this.customer.oib = 123;
+    this.customer.billingAccount = 456;
   }
 
   /** Announce the change in sort state for assistive technology. */

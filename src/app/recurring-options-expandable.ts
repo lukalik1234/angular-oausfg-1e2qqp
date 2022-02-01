@@ -11,7 +11,7 @@ import { AfterViewInit, ViewChild } from '@angular/core';
 import { MatSort, Sort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
 import { MatPaginator } from '@angular/material/paginator';
-import { CustomerDataModel } from '../models/customer-data-model';
+import { CustomerDataModel } from './models/customer-data.model';
 
 /**
  * @title Table with expandable rows

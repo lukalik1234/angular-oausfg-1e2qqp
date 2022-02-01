@@ -16,9 +16,9 @@ import { MatPaginator } from '@angular/material/paginator';
  * @title Table with expandable rows
  */
 @Component({
-  selector: 'table-expandable-rows-example',
-  styleUrls: ['table-expandable-rows-example.css'],
-  templateUrl: 'table-expandable-rows-example.html',
+  selector: 'recurring-options-expandable',
+  styleUrls: ['recurring-options-expandable.css'],
+  templateUrl: 'recurring-options-expandable.html',
   animations: [
     trigger('detailExpand', [
       state('collapsed', style({ height: '0px', minHeight: '0' })),

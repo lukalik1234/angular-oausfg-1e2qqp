@@ -35,7 +35,7 @@ export class RecurringOptionsExpandable implements AfterViewInit {
   dataSource = new MatTableDataSource(ELEMENT_DATA);
   columnsToDisplay = ['msisdn', 'opcija', 'datum', 'status'];
   expandedElement: PeriodicElement | null;
-  customer: CustomerDataModel;
+  customer: CustomerDataModel = new CustomerDataModel();
 
   constructor(private _liveAnnouncer: LiveAnnouncer) {}
 
